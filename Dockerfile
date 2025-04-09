@@ -25,6 +25,6 @@ COPY . .
 RUN yarn i18n:extract && yarn i18n:compile && yarn build
 
 # For production, we can optionally prune dev dependencies
-RUN yarn install --production=true
+RUN yarn install
 
 CMD ["yarn", "start"]
