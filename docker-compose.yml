@@ -1,0 +1,14 @@
+services:
+  app:
+    image: "${DOCKER_USERNAME}/${DOCKER_IMAGE_NAME}:latest"
+    # build: .
+    ports:
+      - "${DOCKER_FORWARD_PORT}:${DOCKER_LISTEN_PORT}"
+    restart: unless-stopped
+    env_file:
+      - stack.env
+
+networks:
+  default:
+    name: "${DOCKER_IMAGE_NAME}"
+    external: false

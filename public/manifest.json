@@ -1,0 +1,20 @@
+{
+    "short_name": "Metti",
+    "name": "Metti",
+    "icons": [{
+        "src": "https://metti.blocksafu.com/favicon.svg",
+        "sizes": "any",
+        "purpose": "any maskable"
+    }],
+    "orientation": "portrait",
+    "display": "standalone",
+    "background_color": "#fff",
+    "homepage_url": "https://metti.blocksafu.com",
+    "providedBy": {
+        "name": "Metti",
+        "url": "https://metti.blocksafu.com"
+    },
+    "start_url": ".",
+    "theme_color": "#23A66F",
+    "description": "Metti swap is swap feature from metti"
+}
