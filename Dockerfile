@@ -1,4 +1,4 @@
-FROM nginx:alpine
+#FROM nginx:alpine
 
 # COPY ./build /var/www
 
@@ -9,6 +9,8 @@ FROM nginx:alpine
 # ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
 # Set working directory
+FROM node:20.11.0-alpine
+
 WORKDIR /app
 
 # Copy package.json and yarn.lock
