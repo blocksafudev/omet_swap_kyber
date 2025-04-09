@@ -27,4 +27,6 @@ RUN yarn i18n:extract && yarn i18n:compile && yarn build
 # For production, we can optionally prune dev dependencies
 RUN yarn install
 
+EXPOSE 3000
+
 CMD ["yarn", "start"]
